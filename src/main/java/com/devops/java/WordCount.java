@@ -39,7 +39,8 @@ public class WordCount extends Configured implements Tool{
 		job.setOutputValueClass(IntWritable.class);
 		job.setOutputFormatClass(TextOutputFormat.class);
 		job.setMapperClass(WordCountMapper.class);
-                System.out.println("Mapper & Reducer class");		
+                System.out.println("Mapper & Reducer class");
+                System.out.println("new file");
 		
 	
 		int returnValue = job.waitForCompletion(true) ? 0:1;
